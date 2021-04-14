@@ -1,0 +1,15 @@
+name: develop-push-workflow
+on:
+  push:
+  branches:
+    - develop
+jobs:
+  validate:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v2
+
+      - name: Check files
+        run: ls -al
