@@ -8,11 +8,6 @@ use PHPUnit\Framework\TestCase;
 
 final class RomanNumerals extends TestCase
 {
-    public function __construct()
-    {
-
-    }
-
     private function add_I($numero_entrada) {
         $numero_romano_salida = "";
         while($numero_entrada > 0) {
